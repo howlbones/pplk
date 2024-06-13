@@ -12,7 +12,8 @@ function handleTabSwitch(e) {
   });
   const activeTab = document.querySelector('.tabs__tab.active');
   activeTab.style.opacity = "0";
-  activeTab.addEventListener('transitionend', (e) => {
+
+  setTimeout((e) => {
     activeTab.classList.remove('active');
     tabs.forEach((tab) => {
       if (tab.classList[1] === tabNumber) {
@@ -20,9 +21,7 @@ function handleTabSwitch(e) {
         tab.classList.add('active');
       }
     })
-  })
-
-
+  }, 250)
 
   e.target.classList.add('active');
 
