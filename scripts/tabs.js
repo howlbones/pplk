@@ -21,7 +21,7 @@ function handleTabSwitch(e) {
         tab.classList.add('active');
       }
     })
-  }, 250)
+  }, 250);
 
   e.target.classList.add('active');
 
