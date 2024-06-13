@@ -61,4 +61,9 @@ a {
   background-color: #DD3037;
   border: none;
   color: white;
+  cursor: pointer;
+}
+
+.btn-popup:active {
+  background-color: #cc2329;
 }
