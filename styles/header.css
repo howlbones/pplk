@@ -1,0 +1,36 @@
+.header {
+  margin-top: 40px;
+  height: 500px;
+  overflow: hidden;
+  background-image: url('../assets/header-bg.webp');
+  background-position: 75% 46%;
+  background-size: 880px auto;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+  color: white;
+  padding-bottom: 46px;
+}
+
+.header__heading {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 120%;
+  font-size: 29px;
+  font-family: var(--gotham-bold);
+}
+
+.header__subheading {
+  text-align: center;
+  font-family: var(--gotham-bold);
+  font-size: 17.5px;
+  position: relative;
+  bottom: 8px;
+}
+
+.header .btn-popup {
+  max-width: 200px;
+}
+

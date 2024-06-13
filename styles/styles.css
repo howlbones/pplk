@@ -50,3 +50,15 @@ body {
 a {
   text-decoration: none;
 }
+
+.btn-popup {
+  width: 100%;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 11.5px;
+  font-family: var(--gotham-bold);
+  border-radius: 100px;
+  background-color: #DD3037;
+  border: none;
+  color: white;
+}
