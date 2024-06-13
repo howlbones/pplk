@@ -3,13 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
     <title>Тестовое</title>
   </head>
   <body>
-    <nav>
-      <a href=""></a>
-      <p>testing</p>
+    <nav class="navbar">
+      <div class="navbar__mobile-icon">
+        <div
+          class="navbar__nav-icon"
+          id="nav-icon1"
+          onclick="
+          document.querySelector('#nav-icon1').classList.toggle('open');
+          document.querySelector('.navbar__mobile-menu').classList.toggle('open');
+        "
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="navbar__mobile-menu">
+        <div
+          class="navbar__mobile-menu-overlay"
+          onclick="
+          document.querySelector('#nav-icon1').classList.toggle('open');
+          document.querySelector('.navbar__mobile-menu').classList.toggle('open');
+        "
+        ></div>
+        <div class="navbar__mobile-menu-sidebar">
+          <a href="">Главная</a>
+          <a href="">Каталог</a>
+          <a href="">Отправить анкету</a>
+        </div>
+      </div>
+      <img class="navbar__logo" src="./assets/logo1.png" alt="Main logo" />
+      <div class="navbar__phone-container">
+        <a href="">8 (812) 603-72-22</a>
+        <a href="">8 (499) 380-77-33</a>
+      </div>
     </nav>
   </body>
 </html>
