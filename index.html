@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/tabs.css" />
+    <link rel="stylesheet" href="./styles/spoiler.css" />
     <title>Тестовое</title>
   </head>
   <body>
@@ -70,5 +72,837 @@
         </div>
       </div>
     </section>
+    <section class="tabs">
+      <h2 class="tabs__heading">Выбери подразделение:</h2>
+      <div class="tabs__btn-container">
+        <button class="tabs__tab-btn 1 active">Строительный отдел</button>
+        <button class="tabs__tab-btn 2">Офис</button>
+        <button class="tabs__tab-btn 3">Финансовый отдел</button>
+        <button class="tabs__tab-btn 4">Отдел продаж</button>
+        <button class="tabs__tab-btn 5">Внештатный сотрудник</button>
+      </div>
+      <div class="tabs__content-container">
+        <div class="tabs__tab 1 active">
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Прораб</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Специалист службы снабжения</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Логист</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>Обсуждается на собеседовании</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Проектировщик</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__tab 2">
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Прораб</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Специалист службы снабжения</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Логист</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>Обсуждается на собеседовании</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Проектировщик</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__tab 3">
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Прораб</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Специалист службы снабжения</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Проектировщик</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__tab 4">
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Прораб</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Специалист службы снабжения</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Логист</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>Обсуждается на собеседовании</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Проектировщик</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__tab 5">
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Прораб</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Специалист службы снабжения</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>ОТ 00 000 РУБ</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__spoiler-container">
+            <div
+              class="spoiler"
+              onclick="this.classList.toggle('spoiler__opened')"
+            >
+              <div class="spoiler__shown-content">
+                <div class="spoiler__left-side">
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/vacancy-icon.png" alt="Vacancy icon" />
+                    <p>Логист</p>
+                  </div>
+                  <div class="spoiler__shown-text-wrapper">
+                    <img src="./assets/price-icon.png" alt="Price icon" />
+                    <p>Обсуждается на собеседовании</p>
+                  </div>
+                </div>
+                <div class="spoiler__icon"></div>
+              </div>
+              <div class="spoiler__hidden-content">
+                <div class="spoiler__hidden-wrapper">
+                  <p class="spoiler__list-heading">Задачи:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Наши ожидания:</p>
+                  <ul>
+                    <li>описание</li>
+                    <li>описание</li>
+                    <li>описание</li>
+                  </ul>
+                  <p class="spoiler__list-heading">Мы предлагаем:</p>
+                  <ul>
+                    <li>график 5/2 с гибким началом рабочего дня;</li>
+                    <li>
+                      оформление по ТК РФ с первого рабочего дня, полностью
+                      белую заработную плату;
+                    </li>
+                    <li>ежеквартальную премию по итогам работы;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <script src="./scripts/tabs.js"></script>
   </body>
 </html>
