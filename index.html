@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/tabs.css" />
     <link rel="stylesheet" href="./styles/spoiler.css" />
     <link rel="stylesheet" href="./styles/benefits.css" />
+    <link rel="stylesheet" href="./styles/products.css" />
+    
     <title>Тестовое</title>
   </head>
   <body>
@@ -1000,6 +1002,43 @@
         </div>
       </div>
     </section>
+    <section class="products">
+      <div class="products__heading">ПРОДУКТЫ КОМПАНИИ</div>
+      <div class="products__tabs_btn-container">
+        <button class="products__tabs_tab-btn 1 active">БАНИ</button>
+        <button class="products__tabs_tab-btn 2">ДОМА</button>
+      </div>
+      <div class="tabs__content-container">
+        <div class="products__tabs_tab 1 active">
+          <div class="product-slider">
+            <div class="product-slider__arrow-container_left">
+              <img src="./assets/arrow-left.png" class="product-slider__arrow_left"></img>
+            </div>
+            <div class="product-slider__arrow-container_right">
+              <img src="./assets/arrow-right.png" class="product-slider__arrow_right"></img>
+            </div>
+            <div class="product-slider__image-container">
+              <div class="product-slider__image-wrapper">
+                <div class="product-slider__image 1"></div>
+                <div class="product-slider__image 2 active"></div>
+                <div class="product-slider__image 3"></div>
+              </div>
+            </div>
+            <div class="product-slider__pagination-container">
+              <div class="pruduct-slider__page-btn 1"></div>
+              <div class="pruduct-slider__page-btn 2"></div>
+              <div class="pruduct-slider__page-btn 3 active"></div>
+              <div class="pruduct-slider__page-btn 4"></div>
+              <div class="pruduct-slider__page-btn 5"></div>
+            </div>
+          </div>
+        </div>
+        <div class="products__tabs_tab 2">
+          test
+        </div>
+      </div>
+    </section>
     <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/products.js"></script>
   </body>
 </html>
